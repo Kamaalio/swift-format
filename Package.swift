@@ -152,10 +152,7 @@ if ProcessInfo.processInfo.environment["SWIFTCI_USE_LOCAL_DEPS"] == nil {
       url: "https://github.com/apple/swift-markdown.git",
       from: "0.2.0"
     ),
-    .package(
-      url: "https://github.com/apple/swift-syntax.git",
-      branch: "main"
-    ),
+    .package(url: "https://github.com/apple/swift-syntax.git", from: "509.0.0-swift-5.9-DEVELOPMENT-SNAPSHOT-2023-04-25-b"),
   ]
 } else {
   package.dependencies += [
